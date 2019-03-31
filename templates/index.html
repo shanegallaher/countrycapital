@@ -1,0 +1,24 @@
+
+
+{% extends "layout.html" %}
+
+{% block body %}
+        <h1>
+            Shane's Game
+        </h1>
+<p>This is somesort of game</p>
+
+<p>{{result}}</p>
+
+
+<form class="needs-validation" novalidate action="/guess" method="post">
+            <div class="guess_form">
+                <div class="guess_field">
+                    <label for="guess">What is the capital of France?</label>
+                    <input class="form-control" id="guess" placeholder= "guess" value="Guess" name="guess" placeholder="guess" type="text" required>
+                </div>
+            </div>
+
+            <input type="submit" value="Go">
+        </form>
+{% endblock %}
